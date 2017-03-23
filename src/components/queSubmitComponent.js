@@ -8,4 +8,11 @@ const SurveySubmit = ({ actions: { prevQue, submitSurvey } }) => (
   </center>
 );
 
+SurveySubmit.propTypes = {
+  actions: React.PropTypes.objectOf(
+    React.PropTypes.func.isRequired,
+  ).isRequired,
+};
+
+
 export default SurveySubmit;

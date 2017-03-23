@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { prevQue, nextQue, submitSurvey } from '../actions/queActions';
+import { prevQue, nextQue } from '../actions/queActions';
 import SurveyLists from '../components/queListsComponent';
 import SurveySubmit from '../components/queSubmitComponent';
 
@@ -15,6 +15,13 @@ const Survey = props => (
   </div>
 );
 
+Survey.propTypes = {
+  surveys: React.PropTypes.objectOf(
+    React.PropTypes.any.isRequired,
+  ).isRequired,
+};
+
+
 function mapStateToProps(state) {
     return {
         surveys: state.surveys
@@ -23,7 +30,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators({ prevQue, nextQue, submitSurvey }, dispatch)
+        actions: bindActionCreators({ prevQue, nextQue }, dispatch)
     };
 }
 

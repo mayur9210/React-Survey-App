@@ -13,7 +13,8 @@ export default class App extends React.Component {
               </nav>
               <span>{this.props.children}</span>
             </div>
-        )}
+        );
+    }
 }
 
 App.propTypes = {

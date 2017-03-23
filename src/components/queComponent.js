@@ -46,5 +46,17 @@ const Survey = ({ question, options, currActive, id, nextQue, prevQue, activeOpt
   : null
 );
 
+Survey.propTypes = {
+  question: React.PropTypes.string.isRequired,
+  options: React.PropTypes.objectOf(
+    React.PropTypes.string.isRequired,
+  ).isRequired,
+  currActive: React.PropTypes.number.isRequired,
+  id: React.PropTypes.number.isRequired,
+  nextQue: React.PropTypes.func.isRequired,
+  prevQue: React.PropTypes.func.isRequired,
+  activeOption: React.PropTypes.number,
+};
+
 
 export default Survey;

@@ -7,5 +7,6 @@ export default class Home extends React.Component {
             <div className="container">
                 <Link to="/survey"><h3>Start Survey</h3></Link>
             </div>
-        )}
+        );
+    }
 }
