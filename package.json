@@ -1,7 +1,6 @@
 {
-  "name": "react-slingshot",
-  "version": "5.0.0",
-  "description": "Starter kit for creating apps with React and Redux",
+  "name": "react-survey-app",
+  "version": "1.0.0",
   "engines": {
     "npm": ">=3"
   },
@@ -28,8 +27,6 @@
     "open:cover": "npm run test:cover && open coverage/lcov-report/index.html",
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js"
   },
-  "author": "Cory House",
-  "license": "MIT",
   "dependencies": {
     "object-assign": "4.1.0",
     "react": "15.4.1",
